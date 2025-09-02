@@ -8,15 +8,15 @@ class Solution:
             if i in vowels:  
                 l.append(i)
         l.reverse()  
-        result = list(s)  
-        j=0
+        result = list(s)   # Convert string to list for easier modification (strings are immutable)
+        j=0  #Index to track position in the reversed vowels list
         for i in range(len(result)):
             if result[i] in vowels:  
-                result[i] = l[j]  ##To loop and check can be with for j in range 
+                result[i] = l[j]  #To loop and check can be with for j in range 
                 j=j+1
         return ''.join(result)  
 #For user to enter a String 
-if __name__ == "__main__":
+if __name__ == "__main__": #Ensures that certain code runs only when the file is executed directly,
     input_string = input("Enter a string: ")
     sol = Solution()
     result = sol.reverseVowels(input_string)
