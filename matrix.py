@@ -1,4 +1,4 @@
-# Read dimensions of the first matrix
+# Read dimensions of the first matrix the row and columns
 rows1 = int(input("Enter number of rows for first matrix: "))
 cols1 = int(input("Enter number of columns for first matrix: "))
 
@@ -8,7 +8,7 @@ mat1 = []
 for i in range(rows1):
     while True:
         row = list(map(int, input(f"Row {i+1}: ").split()))
-        if len(row) != cols1:
+        if len(row) != cols1: #check if they are suited for multiplication
             print(f"Please enter exactly {cols1} values.")
         else:
             mat1.append(row)
@@ -36,7 +36,7 @@ for i in range(rows2):
             break
 
 # Initialize product matrix with zeros
-product = [[0 for _ in range(cols2)] for _ in range(rows1)]
+product = [[0 for _ in range(cols2)] for _ in range(rows1)] #initialized to Zero 
 
 # Multiply matrices
 for i in range(rows1):
@@ -48,3 +48,4 @@ for i in range(rows1):
 print("\nProduct matrix:")
 for row in product:
     print(" ".join(map(str, row)))
+
