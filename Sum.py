@@ -2,9 +2,9 @@
 num = int(input("Enter a number: "))  
   
 if num < 0:  
-   print("Negative numbers are not allowed") 
+   print("Negative numbers are not allowed") # To Avoid any Negative Integers
 else:  
-   sum = 0
+   sum = 0 # Initialize Sum to Zero 
    i = num
    # finding the sum  
    while(i > 0):  
