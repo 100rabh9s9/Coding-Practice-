@@ -1,10 +1,8 @@
 # Initialize an empty list to store the numbers
-Tarray = []
-
-
+Tarray = [] 
 try:
+    # Read in the Number Of Elements
     elements = int(input("Enter the number of elements: "))
-
     # Loop to get each element from the user
     for i in range(elements):
         element = int(input(f"Enter element {i + 1}: "))
@@ -27,6 +25,5 @@ try:
         print(f"The last element is: {last_element}")
     else:
         print("\nThe list is empty, no calculations to perform.")
-
 except ValueError:
     print("Invalid input. Please enter whole numbers only.")
