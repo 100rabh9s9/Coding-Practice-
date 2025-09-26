@@ -1,4 +1,4 @@
-
+#A simple Python class to demonstrate Object-Oriented Programming (OOP).
 class Student: #New Class , "the blueprint"
     def __init__(self, name, marks): #A constructor method that gets called automatically when you create an object.
         self.name = name  #Assigns the passed value
