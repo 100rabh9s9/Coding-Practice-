@@ -10,7 +10,7 @@ for i in range(t):
     n = int(input(f"Enter number {i + 1}: ")) # Increment the value by just 1 
     print(n + 1)
 
-
+#improved Code with Error Handling, checks if the user enters non-integer values .
 # Read number of test cases
 try:
     t = int(input("Enter the number of test cases: "))
@@ -20,7 +20,7 @@ try:
         # Read input for each test case
         try:
             n = int(input(f"Enter number {i + 1}: "))
-            print(n + 1)  # Output incremented number
+            print(n + 1)  
         except ValueError:
             print("Please enter a valid integer.")
             
